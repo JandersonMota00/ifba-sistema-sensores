@@ -2,7 +2,7 @@
 - **Instituição:** IFBA - Instituto Federal da Bahia
 - **Curso:** Análise e Desenvolvimento de Sistemas (ADS)
 - **Disciplina:** Padrões de Projetos
-- **Projeto:** Criar um sistema web (Sistema de pedidos e pagamentos para quiosques autônomos de praça de alimentação)
+- **Projeto:** Refatorando um Sistema de Sensores com Padrões GOF de Criação e Estruturais
 - **Professor:** Felipe de Souza Silva
 - **Semestre:** 5
 - **Ano:** 2025.1
