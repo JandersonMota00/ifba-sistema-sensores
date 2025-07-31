@@ -1,5 +1,5 @@
 package SistemaSensoresRefatorado.display;
 
-public class IDisplay {
-    
+public interface IDisplay {
+    void mostrarDados(String tipo, String valor);
 }

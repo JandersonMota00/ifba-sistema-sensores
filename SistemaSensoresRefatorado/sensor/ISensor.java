@@ -1,5 +1,6 @@
 package SistemaSensoresRefatorado.sensor;
 
-public class ISensor {
-    
+public interface ISensor {
+    String obterTipo();
+    String lerDados();
 }
