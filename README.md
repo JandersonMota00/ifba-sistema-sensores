@@ -128,4 +128,3 @@ Se preferir, execute o arquivo **diagrama_sistema_de_sensores.drawio** que se en
 
 [Documentação técnica.pdf](https://github.com/user-attachments/files/21553553/Exercicio.-.Refatorando.um.Sistema.de.Sensores.com.Padroes.GOF.de.Criacao.e.Estruturais.pdf)
 
-https://docs.google.com/document/d/1mcQfAVPo6UVkutEzuG2npv7XAnWlti0yWRldaMxFWUM/edit?usp=sharing
