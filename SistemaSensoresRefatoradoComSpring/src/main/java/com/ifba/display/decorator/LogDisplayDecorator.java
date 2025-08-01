@@ -11,7 +11,7 @@ public class LogDisplayDecorator extends SensorDisplayDecorator {
 
     @Override
     public void mostrarDados(String tipo, String valor) {
-        Logger.log("LOG: Lendo dados do sensor " + tipo + ": " + valor); // Utiliza a classe Logger
+        Logger.log("LOG: Lendo dados do sensor " + tipo + ": " + valor);
         super.mostrarDados(tipo, valor);
     }
 }

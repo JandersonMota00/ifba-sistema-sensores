@@ -18,38 +18,29 @@ import com.ifba.display.DisplayConsole;
 public class RefatoracaoDoSistemaDeSensoresApplication {
 
 	public static void main(String[] args) {
-		// Obter a única instância do SensorManager (Singleton)
+
         SensorManager manager = SensorManager.getInstance();
 
-        // Criar adaptadores de sensores usando a Factory
         ISensor sensorTemperatura = SensorFactory.criarSensor("temperatura");
         ISensor sensorUmidade = SensorFactory.criarSensor("umidade");
         ISensor sensorLuminosidade = SensorFactory.criarSensor("luminosidade");
 
-        // Adicionar sensores ao gerenciador
         manager.adicionarSensor(sensorTemperatura);
         manager.adicionarSensor(sensorUmidade);
         manager.adicionarSensor(sensorLuminosidade);
 
-        // Configurar o display com Decoradores
-        IDisplay baseDisplay = new DisplayConsole(); // Display base
+        IDisplay baseDisplay = new DisplayConsole();
 
-        // Aplica os decoradores em cascata
-        IDisplay decoratedDisplay = new LogDisplayDecorator(baseDisplay); // Adiciona log
-        decoratedDisplay = new FormatacaoDisplayDecorator(decoratedDisplay); // Adiciona formatação
-        decoratedDisplay = new LimiteAlertaDisplayDecorator(decoratedDisplay, 40.0); // Adiciona alerta de limite para temperatura > 40°C
+        IDisplay decoratedDisplay = new LogDisplayDecorator(baseDisplay);
+        decoratedDisplay = new FormatacaoDisplayDecorator(decoratedDisplay);
+        decoratedDisplay = new LimiteAlertaDisplayDecorator(decoratedDisplay, 40.0);
 
-        // Configurar o display decorado no SensorManager
         manager.setDisplay(decoratedDisplay);
-
-        // Exibir os dados dos sensores usando o gerenciador
         manager.exibirDadosSensores();
 
         System.out.println("\n--- Teste com display básico sem decoradores ---");
-        manager.setDisplay(baseDisplay); // Define o display original para comparação
+        manager.setDisplay(baseDisplay);
         manager.exibirDadosSensores();
-
-		//SpringApplication.run(RefatoracaoDoSistemaDeSensoresApplication.class, args);
 	}
 
 }

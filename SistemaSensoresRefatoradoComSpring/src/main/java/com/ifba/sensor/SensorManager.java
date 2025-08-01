@@ -12,15 +12,15 @@ import com.ifba.display.IDisplay;
 
 public class SensorManager {
     
-    private static SensorManager instance; // Instância única (Singleton)
+    private static SensorManager instance;
     private List<ISensor> sensores;
-    private IDisplay display; // Agora depende da interface IDisplay
+    private IDisplay display;
 
     private SensorManager() {
         sensores = new ArrayList<>();
     }
 
-    public static synchronized SensorManager getInstance() { // Método de acesso à instância
+    public static synchronized SensorManager getInstance() {
         if (instance == null) {
             instance = new SensorManager();
         }
@@ -31,7 +31,6 @@ public class SensorManager {
         this.sensores.add(sensor);
     }
 
-    // Método para configurar o display (Injeção de Dependência)
     public void setDisplay(IDisplay display) {
         this.display = display;
     }

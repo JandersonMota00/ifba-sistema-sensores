@@ -116,6 +116,11 @@ A estrutura do projeto está organizada da seguinte forma:
 │                       └── Logger.java
 ```
 
+## UML
+Esta é a estrutura UML do **sistema de sensores refatorado com spring**.
+
+![UML do sitema com spring](<UML - Sistema de Sensores.png>)
+
 ## Relatorio Técnico
 
 https://docs.google.com/document/d/1mcQfAVPo6UVkutEzuG2npv7XAnWlti0yWRldaMxFWUM/edit?usp=sharing

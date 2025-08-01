@@ -4,7 +4,7 @@ import com.ifba.display.IDisplay;
 
 public class LimiteAlertaDisplayDecorator extends SensorDisplayDecorator {
     
-    private final double limiteTemperatura; // Exemplo de limite
+    private final double limiteTemperatura;
 
     public LimiteAlertaDisplayDecorator(IDisplay wrappedDisplay, double limiteTemperatura) {
         super(wrappedDisplay);
@@ -13,11 +13,10 @@ public class LimiteAlertaDisplayDecorator extends SensorDisplayDecorator {
 
     @Override
     public void mostrarDados(String tipo, String valor) {
-        super.mostrarDados(tipo, valor); // Exibe os dados normalmente primeiro
+        super.mostrarDados(tipo, valor);
 
         if (tipo.equals("Temperatura")) {
             try {
-                // Remove " °C" antes de tentar converter
                 double temp = Double.parseDouble(valor.replace(" °C", "").trim());
                 if (temp > limiteTemperatura) {
                     System.out.println("!!! ALERTA: Temperatura acima do limite (" + limiteTemperatura + "°C) !!!");
