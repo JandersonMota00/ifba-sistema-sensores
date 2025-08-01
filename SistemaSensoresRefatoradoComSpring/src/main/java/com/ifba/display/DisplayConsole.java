@@ -1,4 +1,4 @@
-package SistemaSensoresRefatorado.display;
+package com.ifba.display;
 
 public class DisplayConsole implements IDisplay {
     @Override

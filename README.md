@@ -1,4 +1,4 @@
-# Refatoração do Sistema de Sensores
+# Trabalho de Refatoração do Sistema de Sensores
 - **Instituição:** IFBA - Instituto Federal da Bahia
 - **Curso:** Análise e Desenvolvimento de Sistemas (ADS)
 - **Disciplina:** Padrões de Projetos
@@ -7,7 +7,10 @@
 - **Semestre:** 5
 - **Ano:** 2025.1
 
-Refatorando um Sistema de Sensores com Padrões GOF de Criação e Estruturais
+# Sistema de Sensores Inteligente Refatorado
+
+Este projeto consiste na refatoração de um sistema legado de gerenciamento de sensores embarcados, aplicando Padrões de Projeto GOF (Gang of Four) de Criação e Estruturais, com foco em Adapter e Decorator. O objetivo principal foi transformar um sistema com alto acoplamento e baixa coesão em uma solução mais modular, reutilizável e de fácil manutenção.
+
 
 [Lista A3 - SAJ-ADS08.pdf](https://github.com/user-attachments/files/21475588/A3.-.SAJ-ADS08.-.Refatorando.um.Sistema.de.Sensores.com.Padroes.GOF.de.Criacao.e.Estruturais.pdf)
 
@@ -26,7 +29,30 @@ Refatorando um Sistema de Sensores com Padrões GOF de Criação e Estruturais
   </tr>
 </table>
 
-## Sistema de Sensores Refatorado
+## Estrutura do Projeto
+
+A estrutura do projeto está organizada da seguinte forma:
+
+```
+/ifba-sistema-sensores
+├── SistemaSensoresLegado
+├── SistemaSensoresRefatorado
+├── SistemaSensoresRefatoradoComSpring
+├── diagrama_sistema_de_sensores.drawio
+└── README.md
+```
+
+
+```
+/SistemaSensoresLegado
+├── Main.java
+├── SensorTemperatura.java
+├── SensorUmidade.java
+├── SensorLuminosidade.java
+├── DisplayConsole.java
+└── SensorManager.java
+```
+
 
 ```
 /SistemaSensoresRefatorado
@@ -55,6 +81,51 @@ Refatorando um Sistema de Sensores com Padrões GOF de Criação e Estruturais
 │       └── LimiteAlertaDisplayDecorator.java // Decorador para verificação de limites
 ```
 
+
+```
+/SistemaSensoresRefatoradoComSpring
+├── src
+│   └── main
+│       └── java
+│           └── com
+│               └── ifba
+│                   ├── Main.java
+│                   ├── sensor
+│                   │   ├── ISensor.java
+│                   │   ├── SensorFactory.java
+│                   │   ├── SensorManager.java
+│                   │   ├── legacy
+│                   │   │   ├── SensorLuminosidade.java
+│                   │   │   ├── SensorTemperatura.java
+│                   │   │   └── SensorUmidade.java
+│                   │   │
+│                   │   └── adapter
+│                   │       ├── LuminosidadeSensorAdapter.java
+│                   │       ├── TemperaturaSensorAdapter.java
+│                   │       └── UmidadeSensorAdapter.java
+│                   │
+│                   ├── display
+│                   │   ├── IDisplay.java
+│                   │   ├── ConsoleDisplay.java
+│                   │   └── decorator
+│                   │       ├── SensorDisplayDecorator.java
+│                   │       ├── LogDisplayDecorator.java
+│                   │       ├── FormatacaoDisplayDecorator.java
+│                   │       └── LimiteAlertaDisplayDecorator.java
+│                   │
+│                   └── util
+│                       └── Logger.java
+```
+
+## UML
+Esta é a estrutura UML do **sistema de sensores refatorado com spring**.
+
+![UML do sitema com spring](<UML - Sistema de Sensores.png>)
+
+Se preferir, execute o arquivo **diagrama_sistema_de_sensores.drawio** que se encontra a UML onde foi desenvolvida no software Draw.io.
+
 ## Relatorio Técnico
+
+[Documentação técnica.pdf](https://github.com/user-attachments/files/21553553/Exercicio.-.Refatorando.um.Sistema.de.Sensores.com.Padroes.GOF.de.Criacao.e.Estruturais.pdf)
 
 https://docs.google.com/document/d/1mcQfAVPo6UVkutEzuG2npv7XAnWlti0yWRldaMxFWUM/edit?usp=sharing

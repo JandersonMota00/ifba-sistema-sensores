@@ -1,8 +1,8 @@
-package SistemaSensoresRefatorado.sensor;
+package com.ifba.sensor;
 
-import SistemaSensoresRefatorado.sensor.adapter.LuminosidadeSensorAdapter;
-import SistemaSensoresRefatorado.sensor.adapter.TemperaturaSensorAdapter;
-import SistemaSensoresRefatorado.sensor.adapter.UmidadeSensorAdapter;
+import com.ifba.sensor.adapter.LuminosidadeSensorAdapter;
+import com.ifba.sensor.adapter.TemperaturaSensorAdapter;
+import com.ifba.sensor.adapter.UmidadeSensorAdapter;
 
 public class SensorFactory {
     public static ISensor criarSensor(String tipoSensor) {

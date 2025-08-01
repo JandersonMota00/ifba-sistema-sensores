@@ -1,7 +1,7 @@
-package SistemaSensoresRefatorado.sensor.adapter;
+package com.ifba.sensor.adapter;
 
-import SistemaSensoresRefatorado.sensor.ISensor;
-import SistemaSensoresRefatorado.sensor.legacy.SensorTemperatura;
+import com.ifba.sensor.ISensor;
+import com.ifba.sensor.legacy.SensorTemperatura;
 
 public class TemperaturaSensorAdapter implements ISensor {
     

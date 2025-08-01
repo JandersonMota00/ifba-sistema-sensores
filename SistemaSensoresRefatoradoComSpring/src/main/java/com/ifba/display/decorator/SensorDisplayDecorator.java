@@ -1,6 +1,6 @@
-package SistemaSensoresRefatorado.display.decorator;
+package com.ifba.display.decorator;
 
-import SistemaSensoresRefatorado.display.IDisplay;
+import com.ifba.display.IDisplay;
 
 public abstract class SensorDisplayDecorator implements IDisplay {
     

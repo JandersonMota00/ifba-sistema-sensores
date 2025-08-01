@@ -1,7 +1,7 @@
-package SistemaSensoresRefatorado.sensor.adapter;
+package com.ifba.sensor.adapter;
 
-import SistemaSensoresRefatorado.sensor.ISensor;
-import SistemaSensoresRefatorado.sensor.legacy.SensorLuminosidade;
+import com.ifba.sensor.ISensor;
+import com.ifba.sensor.legacy.SensorLuminosidade;
 
 public class LuminosidadeSensorAdapter implements ISensor {
     
