@@ -38,6 +38,7 @@ A estrutura do projeto está organizada da seguinte forma:
 ├── SistemaSensoresLegado
 ├── SistemaSensoresRefatorado
 ├── SistemaSensoresRefatoradoComSpring
+├── diagrama_sistema_de_sensores.drawio
 └── README.md
 ```
 
@@ -120,6 +121,8 @@ A estrutura do projeto está organizada da seguinte forma:
 Esta é a estrutura UML do **sistema de sensores refatorado com spring**.
 
 ![UML do sitema com spring](<UML - Sistema de Sensores.png>)
+
+Se preferir, execute o arquivo **diagrama_sistema_de_sensores.drawio** que se encontra a UML onde foi desenvolvida no software Draw.io.
 
 ## Relatorio Técnico
 
