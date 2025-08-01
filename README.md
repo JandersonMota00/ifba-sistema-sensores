@@ -123,6 +123,6 @@ Esta é a estrutura UML do **sistema de sensores refatorado com spring**.
 
 ## Relatorio Técnico
 
-[Documentação técnica](<../../../../Downloads/Exercício -  Refatorando um Sistema de Sensores com Padrões GOF de Criação e Estruturais.pdf>)
+[Documentação técnica.pdf](https://github.com/user-attachments/files/21553553/Exercicio.-.Refatorando.um.Sistema.de.Sensores.com.Padroes.GOF.de.Criacao.e.Estruturais.pdf)
 
 https://docs.google.com/document/d/1mcQfAVPo6UVkutEzuG2npv7XAnWlti0yWRldaMxFWUM/edit?usp=sharing
